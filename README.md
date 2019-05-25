@@ -30,11 +30,12 @@ This is a work in progress.
     - ~~Get dow command~~
     - ~~Get temperature command~~
 - Shift register library integration [from here](https://github.com/gemul/ArduinoLibraries)
-- Relay module integration
-    - 74HC595
-    - Relay Commands
-    - ...
-- 7 segment display integration
-    - 74HC595
-    - display commands
-    - ...
+    - PINOUT(clock=4,latch=7,data=6)
+- ~~Relay module integration~~
+    - ~~74HC595~~
+    - ~~Relay Commands~~
+    - ~~...~~
+- ~~7 segment display integration~~
+    - ~~74HC595~~
+    - ~~display commands~~
+    - ~~...~~

@@ -1,9 +1,14 @@
 #include <Wire.h>
 #include <DS3231.h>
 #include <SoftwareSerial.h>
+#include "libraries/ShiftRegister/ShiftRegister.h"
 // #define DS3231_ADDR 0x68
 #define CMDSIZE 64
+#define LATCH_PIN 7 //Pin connected to Pin 12 of 74HC595 (Latch)
+#define CLOCK_PIN 4 //Pin connected to Pin 11 of 74HC595 (Clock)
+#define DATA_PIN 6  //Pin connected to Pin 14 of 74HC595 (Data)
 
+ShiftRegister sr(CLOCK_PIN,LATCH_PIN,DATA_PIN); //create a new ShiftRegister Object
 SoftwareSerial Bluetooth(10, 9); // RX, TX
 DS3231 rtc(SDA, SCL);
 
